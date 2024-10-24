@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+scikit-learn = "*"
+pandas = "*"
+seaborn = "*"
+flask = "*"
+ipykernel = "*"
+jupyter = "*"
+numpy = "*"
+gunicorn = "*"
+xgboost = "*"
+tqdm = "*"
+mlxtend = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
