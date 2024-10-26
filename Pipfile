@@ -17,6 +17,7 @@ tqdm = "*"
 mlxtend = "*"
 
 [dev-packages]
+awsebcli = "*"
 
 [requires]
 python_version = "3.11"
