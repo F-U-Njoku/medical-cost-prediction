@@ -10,6 +10,15 @@ from sklearn.model_selection import train_test_split
 # Initialize Flask app
 app = Flask('med_cost')
 
+# Add health check endpoints
+@app.route('/', methods=['GET'])
+def root():
+    return jsonify({'status': 'OK', 'message': 'Medical Cost Prediction API is running'}), 200
+
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({'status': 'healthy'}), 200
+
 # Load model
 max_depth = 5
 n_estimators = 400

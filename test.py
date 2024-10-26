@@ -1,6 +1,7 @@
 import requests
 
-url = 'http://localhost:9696/predict'
+host = "med-app-env.eba-kcymnwx2.eu-west-1.elasticbeanstalk.com"
+url = f'http://{host}/predict'
 applicant = {"age": 25,
              "sex":"male",
              "bmi": 45.54,
