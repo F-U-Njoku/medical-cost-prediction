@@ -67,8 +67,8 @@ For this project, eight regression algorithms were compared before selecting a f
   - K-Nearest Neighbors Regression
     
 <div align="center">
+	<img width = "45%" src="./Images/rmse.png" alt="Root Mean Squared Error.">
 	<img width = "45%" src="./Images/r2.png" alt="R2.">
-<img width = "45%" src="./Images/rmse.png" alt="Root Mean Squared Error.">
 </div>
 
 Based on the Mean Squared Error and R2 scores, Random Forest Regression was the best-performing algorithm and was selected to build the final model. The code for the model selection is available in ```notebook.ipynb```.
