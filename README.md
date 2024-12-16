@@ -178,7 +178,7 @@ Change details of the applicant in the ```test.py``` file and run it to get new 
 
 ## Contributing
 
-We welcome contributions to the Travel Itinerary Planner! Here's how you can help:
+I welcome contributions to the Medical Cost Prediction project! Here's how you can help:
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/AmazingFeature`)
