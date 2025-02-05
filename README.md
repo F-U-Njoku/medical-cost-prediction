@@ -15,6 +15,7 @@
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Model Selection](#model-selection)
 - [Technical Architecture](#technical-architecture)
+- [Dependencies](#dependencies)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
@@ -73,13 +74,29 @@ For this project, eight regression algorithms were compared before selecting a f
 
 Based on the Mean Squared Error and R2 scores, Random Forest Regression was the best-performing algorithm and was selected to build the final model. The code for the model selection is available in ```notebook.ipynb```.
 
+### Model Information
+
+- **Algorithm**: Random Forest Regressor
+- **Features**: age, sex, bmi, children, smoker status, region
+- **Target Variable**: charges (log-transformed)
+- **Model Performance**: 0.3535 (Root Mean Squared Error)
+
 ## Technical Architecture
 - **App Framework**: Flask
 - **ML Framework**: Scikit-learn
-- **Model**: Random Forest Classifier (max_depth=5, n_estimators=400)
+- **Model**: Random Forest Regressor (max_depth=5, n_estimators=400)
 - **Deployment**: AWS Elastic Beanstalk with Docker
 - **API Protocol**: REST
 - **Input/Output**: JSON
+
+## Dependencies
+
+- Python 3.11
+- Flask
+- scikit-learn
+- numpy
+- pandas
+- gunicorn (for production deployment)
 
 ## Deployment
 
@@ -159,22 +176,6 @@ Output:
 The predicted medical cost is 12345.67 yearly.
 ```
 Change details of the applicant in the ```test.py``` file and run it to get new predictions.
-
-## Model Information
-
-- **Algorithm**: Random Forest Regressor
-- **Features**: age, sex, bmi, children, smoker status, region
-- **Target Variable**: charges (log-transformed)
-- **Model Performance**: 0.3535 (Root Mean Squared Error)
-
-## Dependencies
-
-- Python 3.11
-- Flask
-- scikit-learn
-- numpy
-- pandas
-- gunicorn (for production deployment)
 
 ## Contributing
 
